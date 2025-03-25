@@ -19,7 +19,7 @@ app.add_middleware(
 
 # Configure Google AI
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-2.0-flash')
 
 class ChatMessage(BaseModel):
     message: str
